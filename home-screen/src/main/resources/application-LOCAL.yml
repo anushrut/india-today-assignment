@@ -1,0 +1,10 @@
+
+#############################################################
+########## LOCAL Environment ################################
+#############################################################
+spring:
+   profiles: LOCAL
+   datasource:
+      url: jdbc:mysql://localhost:3306/indiatoday?allowPublicKeyRetrieval=true&useSSL=false
+      username: root
+      password: sparks123
