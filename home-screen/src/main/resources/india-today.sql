@@ -37,6 +37,7 @@ CREATE TABLE reports (
     offer_price int NOT NULL,
     PRIMARY KEY (id)
 );
+
 CREATE TABLE indepth_points (
     id int NOT NULL,
     point_value varchar(100),
@@ -53,7 +54,6 @@ CREATE TABLE available_languages (
 );
 
 ------------------------------
-
 
 CREATE TABLE horoscopes (
     id int NOT NULL,
@@ -90,7 +90,6 @@ CREATE TABLE suggestions (
 	FOREIGN KEY (questions_id) REFERENCES questions(id)
 );
 
---------
 
 CREATE TABLE astro (
     id int NOT NULL,
@@ -126,7 +125,7 @@ CREATE TABLE languages (
     FOREIGN KEY (astro_id) REFERENCES astro(id)
 );
 
-CREATEquestions TABLE skills (
+CREATE TABLE skills (
     id int not null,
     skill_value varchar(20) not null,
     astro_id int not null,
@@ -148,7 +147,6 @@ CREATE TABLE availability (
     FOREIGN KEY (astro_id) REFERENCES astro(id)
 );
 
-
 CREATE TABLE slot (
     to_format varchar(10),
     from_format varchar(10),
@@ -158,21 +156,9 @@ CREATE TABLE slot (
     FOREIGN KEY (astro_id) REFERENCES astro(id)
 );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+CREATE TABLE days (
+   id int NOT NULL,
+    day varchar(10),
+    astro_id int NOT NULL,
+    FOREIGN KEY (astro_id) REFERENCES astro(id)
+);

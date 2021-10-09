@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "1e768478-18f5-4778-afe4-967110c97d05",
+		"name": "india-today",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "banner",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/home/api/v1/data/banner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"home",
+						"api",
+						"v1",
+						"data",
+						"banner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "report",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/home/api/v1/data/report",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"home",
+						"api",
+						"v1",
+						"data",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "question",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/home/api/v1/data/question",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"home",
+						"api",
+						"v1",
+						"data",
+						"question"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "horoscope",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/home/api/v1/data/horoscope",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"home",
+						"api",
+						"v1",
+						"data",
+						"horoscope"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "astro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/home/api/v1/data/astro?id=31",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"home",
+						"api",
+						"v1",
+						"data",
+						"astro"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "31"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
